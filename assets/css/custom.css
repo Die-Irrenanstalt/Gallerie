@@ -1,0 +1,16 @@
+@import url('https://api.fonts.coollabs.io/css2?family=Roboto&display=swap');
+
+html {
+  font-family: "Roboto", sans-serif;;
+}
+
+:root {
+    --surface-1-light: #ffffff;
+    --surface-2-light: #dee2e6;
+    --text-1-light: #030507;
+    --text-2-light: #868e96;
+    --surface-1-dark: #272727;
+    --surface-2-dark: #545454;
+    --text-1-dark: #771c1c;
+    --text-2-dark: #C7C7C7;
+  }

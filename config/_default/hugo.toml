@@ -1,0 +1,47 @@
+baseURL = 'https://diadz.de/gallerie'
+copyright = "© 2024 DIADZ"
+defaultContentLanguage = "en"
+disableKinds = ["taxonomy", "term"]
+enableRobotsTXT = true
+languageCode = "en"
+timeZone = "Europe/Berlin"
+timeout = "120s"
+title = "Gallerie | DIADZ"
+
+[params]
+  defaultTheme = "dark"
+  description = "DIADZ Bilder Gallerie"
+  title = "Gallerie | DIADZ"
+  [params.author]
+    name = "DIADZ"
+  [params.socialIcons]
+    github = "https://github.com/Die-Irrenanstalt/"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+[imaging]
+  quality = 75
+  resampleFilter = "CatmullRom"
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = true
+    includeFields = "ImageDescription|Orientation"
+
+[module]
+  [module.hugoVersion]
+    min = "0.121.2"
+  [[module.imports]]
+    path = "github.com/nicokaiser/hugo-theme-gallery/v4"
+
+[menu]
+  [[menu.footer]]
+    name = "GitHub"
+    url = "https://github.com/Die-Irrenanstalt/Gallerie/"
+    weight = 3
+
+[services]
+  [services.rss]
+    limit = 100
